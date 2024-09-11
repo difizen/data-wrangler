@@ -2,7 +2,7 @@
   "name": "datavisor",
   "displayName": "datavisor",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "ryannz",
   "engines": {
     "vscode": "^1.80.0"
@@ -11,7 +11,7 @@
     "Other"
   ],
   "repository": "https://github.com/difizen/data-wrangler/tree/master",
-  "activationEvents": [],
+  "activationEvents": ["onCustomEditor:datavisor.csv"],
   "main": "./dist/extension.js",
   "contributes": {
     "customEditors": [

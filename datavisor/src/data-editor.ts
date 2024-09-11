@@ -91,7 +91,10 @@ export class DataVisorEditorProvider implements vscode.CustomTextEditorProvider 
 			}
 		});
 
-		updateWebview();
+		// use settimeout to fix opensumi webview bug
+		setTimeout(() => {
+			updateWebview();
+		}, 100);
 	}
 
 	/**
